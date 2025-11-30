@@ -49,7 +49,7 @@ Windows
 
 ### Console Errors
 
-```
+```text
 Error: Timeout waiting for image conversion
     at exportToDocx (content.js:1234)
 ```

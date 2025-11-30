@@ -4,7 +4,6 @@
 
 [![Chrome Web Store](https://img.shields.io/badge/Chrome-Web_Store-blue?logo=google-chrome)](https://chrome.google.com/webstore/detail/cfopbpknalachedpcddhgbgjoigklien)
 [![Version](https://img.shields.io/badge/version-1.0.2-green)](https://github.com/getmarkview/support/releases)
-[![License](https://img.shields.io/badge/license-MIT-blue)](https://github.com/getmarkview/getmarkview.github.io)
 
 ---
 
@@ -114,12 +113,6 @@ If you love MarkView:
 - ⭐ Star this repo
 - 📝 Leave a review on [Chrome Web Store](https://chrome.google.com/webstore/detail/cfopbpknalachedpcddhgbgjoigklien)
 - 🐦 Share with friends and colleagues
-
----
-
-## 📝 License
-
-MarkView is released under the MIT License.
 
 ---
 
