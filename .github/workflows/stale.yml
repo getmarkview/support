@@ -1,0 +1,49 @@
+name: Close Stale Issues
+on:
+  schedule:
+    # Run daily at midnight UTC
+    - cron: '0 0 * * *'
+  workflow_dispatch: # Allow manual trigger
+
+permissions:
+  issues: write
+  pull-requests: write
+
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/stale@v9
+        with:
+          # Days before marking as stale
+          days-before-stale: 60
+
+          # Days before closing after marked stale
+          days-before-close: 14
+
+          # Label to use for stale issues
+          stale-issue-label: 'stale'
+
+          # Message when marking as stale
+          stale-issue-message: |
+            This issue has been automatically marked as stale because it has not had recent activity. 
+            It will be closed in 14 days if no further activity occurs.
+
+            If this is still relevant, please comment to keep it open.
+            Thank you for your contribution! 🙏
+
+          # Message when closing
+          close-issue-message: |
+            This issue has been automatically closed due to inactivity.
+
+            If you believe this is still relevant, please feel free to reopen it or create a new issue.
+            Thank you! 🙏
+
+          # Don't mark issues with these labels as stale
+          exempt-issue-labels: 'critical,in-progress,confirmed,enhancement'
+
+          # Don't mark PRs as stale
+          exempt-all-pr-milestones: true
+
+          # Operations per run (increase if you have many issues)
+          operations-per-run: 100
